@@ -1,0 +1,24 @@
+﻿@page
+@{
+    ViewData["Title"] = "Array List";
+    string[] mobilename = new string[5];
+    mobilename[0] = "Apple iphone 12 Pro Max";
+    mobilename[1] = "Samsung Galaxy S20 Ultra";
+    mobilename[2] = "Xiaomi MI 10";
+    mobilename[3] = "OnePlus 8 PRO";
+    mobilename[4] = "Huawei P30 PRO";
+}
+
+    <section>
+
+        <header>
+            <h1>Best Mobile Phones in India</h1>
+        </header>
+
+        <ul>
+            @for (int i = 0; i < mobilename.Length; i++)
+            {
+            <li>@mobilename[i]</li>
+            }
+        </ul>
+    </section>
